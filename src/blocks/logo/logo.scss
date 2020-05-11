@@ -1,0 +1,14 @@
+.logo__text {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .logo__text {
+    display: inline-block;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,18 @@
+.button {
+  font-weight: 600;
+  font-family: $second-font;
+
+  &--transparent {
+    padding: 12.5px 40px;
+    font-size: 16px;
+    color: $black;
+    background: transparent;
+    border: 1px solid $main-blue;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #ffffff;
+      background: $main-blue;
+    }
+  }
+}
