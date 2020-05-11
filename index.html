@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Template v.2.0.</title>
+  <title>УралСтрой-ЖБИ</title>
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons//apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicons//apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
@@ -24,6 +24,96 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+<header class="header">
+  <div class="header__top">
+    <a href="javascript://" class="header__logo logo">
+      <picture>
+        <source srcset="img/logo.webp" type="image/webp">
+        <img src="img/logo.png" alt="logo">
+      </picture>
+      <p class="logo__text">Производство железобетонных изделий в Екатеринбурге</p>
+    </a>
+    <p class="header__work">Пн-пт: с 9:00  до 21:00</p>
+    <ul class="header__contacts">
+      <li class="header__contact">
+        <a href="tel: 83438767898" class="header__link">8 343 876 78 98</a>
+        <a href="javascript://" class="header__callback">Заказать звонок</a>
+      </li>
+      <li class="header__contact">
+        <a href="mailto: 3617226@mail.ru" class="header__link">3617226@mail.ru</a>
+        <a href="javascript://" class="header__callback">Заказать звонок</a>
+      </li>
+    </ul>
+  </div>
+  <div class="header__bottom">
+    <div  class="header__catalog">
+      <a href="javascript://">
+        <svg class="header__catalog-icon">
+          <use xlink:href="img/sprites/sprite.svg#icon__catalog-menu"></use>
+        </svg>
+      <span>Каталог</span>
+      </a>
+      <ul class="header__cats">
+        <li class="header__cat"><a href="javascript://">Блоки фундаментальные ФБС</a></li>
+        <li class="header__cat"><a href="javascript://">Бордюры</a></li>
+        <li class="header__cat"><a href="javascript://">Кирпич</a></li>
+        <li class="header__cat"><a href="javascript://">Кольца колодезные</a></li>
+        <li class="header__cat"><a href="javascript://">Лотки теплотрасс</a></li>
+        <li class="header__cat"><a href="javascript://">Опорные подушки</a></li>
+        <li class="header__cat"><a href="javascript://">Панели ограждений и фундамент</a></li>
+        <li class="header__cat"><a href="javascript://">Перемычки жб брусковые-плитные</a></li>
+        <li class="header__cat"><a href="javascript://">Перемычки ячеистые керамзитобетонные</a></li>
+        <li class="header__cat"><a href="javascript://">Плиты днище колодца</a></li>
+        <li class="header__cat"><a href="javascript://">Плиты дорожные</a></li>
+        <li class="header__cat"><a href="javascript://">Плиты перекрытия камер</a></li>
+        <li class="header__cat"><a href="javascript://">Плиты перекрытия колодцев</a></li>
+        <li class="header__cat"><a href="javascript://">Плиты перекрытия ПБ и ПК</a></li>
+        <li class="header__cat"><a href="javascript://">Плиты перекрытия теплотрасс</a></li>
+        <li class="header__cat"><a href="javascript://">Приставы для деревянных опор</a></li>
+        <li class="header__cat"><a href="javascript://">Сваи общестроительные</a></li>
+        <li class="header__cat"><a href="javascript://">Стойки СВ</a></li>
+        <li class="header__cat"><a href="javascript://">Ступени</a></li>
+        <li class="header__cat"><a href="javascript://">Твинблок</a></li>
+      </ul>
+    </div>
+    <nav class="header__menu menu">
+      <button class="menu__btn">
+        <span class="menu__hamburger">Открыть меню</span>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="about.html">О компании</a></li>
+        <li class="menu__item"><a href="delivery.html">Оплата и доставка</a></li>
+        <li class="menu__item"><a href="gallery.html">Галерея проектов</a></li>
+        <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <form action="" class="header__search">
+      <label for="search" class="header__loupe">
+        <span class="visually-hidden">Поиск</span>
+        <svg class="header__search-icon">
+          <use xlink:href="img/sprites/sprite.svg#icon__loupe"></use>
+        </svg>
+      </label>
+      <div class="header__search-row">
+        <div class="header__search-inner">
+          <svg class="header__search-close header__search-close--button">
+            <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+          </svg>
+          <div class="header__search-input">
+            <input id="search" type="search" placeholder="Поиск по каталогу...">
+            <div class="header__search-circle">
+              <svg class="header__search-close">
+                <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+              </svg>
+            </div>
+          </div>
+          <button type="submit">Искать</button>
+        </div>
+      </div>
+    </form>
+    <a href="javascript://" class="header__button button button--transparent">Оставить заявку</a>
+  </div>
+</header>
   <main>
   </main>
   <script src="js/libs.js"></script>
