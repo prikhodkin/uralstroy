@@ -1,6 +1,7 @@
 .button {
   font-weight: 600;
   font-family: $second-font;
+  cursor: pointer;
 
   &--transparent {
     padding: 12.5px 40px;
@@ -13,6 +14,39 @@
     &:hover {
       color: #ffffff;
       background: $main-blue;
+    }
+  }
+
+  &--white {
+    display: inline-block;
+    padding: 12.5px 24px;
+    font-size: 14px;
+    color: #4b4b4b;
+    letter-spacing: 0.03em;
+    background: #eaeaea;
+    border: 1px solid #eaeaea;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #eaeaea;
+      background: transparent;
+    }
+  }
+
+  &--blue {
+    display: inline-block;
+    width: 100%;
+    padding: 19px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: $main-blue;
+    border: none;
+    border: 1px solid $main-blue;
+
+    &:hover {
+      color: #eaeaea;
+      background: transparent;
     }
   }
 }

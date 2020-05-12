@@ -1,0 +1,22 @@
+.textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 7px 16px;
+  font-size: 14px;
+  line-height: 34px;
+  font-family: $second-font;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  appearance: none;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .textarea {
+    padding: 4px 18px;
+  }
+}

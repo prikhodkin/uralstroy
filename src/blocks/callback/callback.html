@@ -1,0 +1,33 @@
+<section class="callback">
+  <h2 class="callback__title">Свяжитесь с нами</h2>
+  <div class="callback__inner">
+    <p class="callback__text">Для получения детальной информации воспользуйтесь формой обратной связи</p>
+    <form action="" class="callback__form">
+      <div class="callback__left">
+        <input class="input" type="text" placeholder="Имя*">
+        <input class="input" type="tel" placeholder="Телефон*" required>
+        <input class="input" type="email" placeholder="Email*" required>
+      </div>
+      <div class="callback__right">
+        <textarea class="textarea" placeholder="Ваш вопрос"></textarea>
+        <div class="callback__bottom">
+          <div class="input input--file">
+            <input name="file" type="file" name="file" id="input__file" class="input input-f input--hidden" multiple>
+            <label for="input__file" class="input__file">
+              <svg class="input__icon">
+                <use xlink:href="img/sprites/sprite.svg#icon__add-file"></use>
+              </svg>
+              <span class="input__text">Прикрепить файл</span>
+            </label>
+          </div>
+          <button class="callback__button button button--blue">
+            <svg class="callback__icon">
+              <use xlink:href="img/sprites/sprite.svg#icon__callback"></use>
+            </svg>
+            <span>Отправить</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
