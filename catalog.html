@@ -114,41 +114,181 @@
     <a href="javascript://" class="header__button button button--transparent">Оставить заявку</a>
   </div>
 </header>
-  <main>
-    <section class="callback">
-      <h2 class="callback__title">Свяжитесь с нами</h2>
-      <div class="callback__inner">
-        <p class="callback__text">Для получения детальной информации воспользуйтесь формой обратной связи</p>
-        <form action="" class="callback__form">
-          <div class="callback__left">
-            <input class="input" type="text" placeholder="Имя*">
-            <input class="input" type="tel" placeholder="Телефон*" required>
-            <input class="input" type="email" placeholder="Email*" required>
-          </div>
-          <div class="callback__right">
-            <textarea class="textarea" placeholder="Ваш вопрос"></textarea>
-            <div class="callback__bottom">
-              <div class="input input--file">
-                <input name="file" type="file" name="file" id="input__file" class="input input-f input--hidden" multiple>
-                <label for="input__file" class="input__file">
-                  <svg class="input__icon">
-                    <use xlink:href="img/sprites/sprite.svg#icon__add-file"></use>
-                  </svg>
-                  <span class="input__text">Прикрепить файл</span>
-                </label>
-              </div>
-              <button class="callback__button button button--blue">
-                <svg class="callback__icon">
-                  <use xlink:href="img/sprites/sprite.svg#icon__callback"></use>
+<main>
+  <section class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item">Каталог</li>
+    </ul>
+  </section>
+  <div class="catalog">
+    <h1 class="catalog__title title title--section">Каталог продукции</h1>
+    <div class="catalog__search search">
+      <p class="search__title">Быстрый поиск</p>
+      <form action="#" class="search__form">
+        <label class="search__label">
+          <input type="search" class="search__input" placeholder="Введите название">
+          <button class="search__button" type="submit"></button>
+        </label>
+      </form>
+    </div>
+    <ul class="catalog__list">
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__01.png" class="catalog__img">
+          <p class="catalog__name">Блоки фундаментальные ФБС</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__02.png" class="catalog__img">
+          <p class="catalog__name">Бордюры</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__03.png" class="catalog__img">
+          <p class="catalog__name">Кирпичи</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__04.png" class="catalog__img">
+          <p class="catalog__name">Кольца колодезные</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__05.png" class="catalog__img">
+          <p class="catalog__name">Лотки теплотрасс</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__06.png" class="catalog__img">
+          <p class="catalog__name">Опорные подушки</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__07.png" class="catalog__img">
+          <p class="catalog__name">Панели ограждений и фундамент</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__08.png" class="catalog__img">
+          <p class="catalog__name">Перемычки жб брусковые плитные</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__09.png" class="catalog__img">
+          <p class="catalog__name">Перемычки ячеистые керамзитобетонные</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__10.png" class="catalog__img">
+          <p class="catalog__name">Плиты днище колодца</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__11.png" class="catalog__img">
+          <p class="catalog__name">Плиты дорожные</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__12.png" class="catalog__img">
+          <p class="catalog__name">Плиты перекрытия камер</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__13.png" class="catalog__img">
+          <p class="catalog__name">Плиты перекрытия колодцев</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__14.png" class="catalog__img">
+          <p class="catalog__name">Плиты перекрытия ПБ и ПК</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__15.png" class="catalog__img">
+          <p class="catalog__name">Плиты перекрытия теплотрасс</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__16.png" class="catalog__img">
+          <p class="catalog__name">Приставки для деревянных опор</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__17.png" class="catalog__img">
+          <p class="catalog__name">Сваи обществроительные</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__18.png" class="catalog__img">
+          <p class="catalog__name">Стойки СВ</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__19.png" class="catalog__img">
+          <p class="catalog__name">Ступени</p>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a href="#">
+          <img src="img/cats__20.png" class="catalog__img">
+          <p class="catalog__name">Твинблок</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <section class="callback">
+    <h2 class="callback__title">Свяжитесь с нами</h2>
+    <div class="callback__inner">
+      <p class="callback__text">Для получения детальной информации воспользуйтесь формой обратной связи</p>
+      <form action="" class="callback__form">
+        <div class="callback__left">
+          <input class="input" type="text" placeholder="Имя*">
+          <input class="input" type="tel" placeholder="Телефон*" required>
+          <input class="input" type="email" placeholder="Email*" required>
+        </div>
+        <div class="callback__right">
+          <textarea class="textarea" placeholder="Ваш вопрос"></textarea>
+          <div class="callback__bottom">
+            <div class="input input--file">
+              <input name="file" type="file" name="file" id="input__file" class="input input-f input--hidden" multiple>
+              <label for="input__file" class="input__file">
+                <svg class="input__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-file"></use>
                 </svg>
-                <span>Отправить</span>
-              </button>
+                <span class="input__text">Прикрепить файл</span>
+              </label>
             </div>
+            <button class="callback__button button button--blue">
+              <svg class="callback__icon">
+                <use xlink:href="img/sprites/sprite.svg#icon__callback"></use>
+              </svg>
+              <span>Отправить</span>
+            </button>
           </div>
-        </form>
-      </div>
-    </section>
-  </main>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
 <footer class="footer">
   <div class="footer__top">
     <a href="javascript://" class="footer__logo logo">
@@ -200,7 +340,7 @@
     <p class="footer__development">Разработка сайта: <a href="javascript://">www.prikhodkin.com</a></p>
   </div>
 </footer>
-  <script src="js/libs.js"></script>
-  <script src="js/general.js"></script>
+<script src="js/libs.js"></script>
+<script src="js/general.js"></script>
 </body>
 </html>
