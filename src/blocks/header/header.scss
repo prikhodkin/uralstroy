@@ -180,6 +180,7 @@
     position: absolute;
     top: 70px;
     left: 0;
+    z-index: 100;
     display: none;
     flex-direction: column;
     flex-wrap: wrap;
@@ -188,7 +189,6 @@
     padding: 40px 35px;
     background: #ffffff;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-    z-index: 100;
   }
 
   .header__cat {

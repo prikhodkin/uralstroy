@@ -1,0 +1,19 @@
+.section {
+  padding: 10px 15px 100px 15px;
+}
+
+.section__title {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    @include page-wrapper;
+    padding-top: 0;
+    padding-bottom: 170px;
+  }
+
+  .section__title {
+    margin-bottom: 25px;
+  }
+}

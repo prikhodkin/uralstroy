@@ -45,7 +45,12 @@
 
     &:hover {
       color: #eaeaea;
-      background: transparent;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: $text-blue;
     }
   }
 }

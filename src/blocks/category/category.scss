@@ -1,0 +1,132 @@
+.category__back {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.category__sidebar {
+  display: none;
+}
+
+.category__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-blue;
+  background-color: #f3f7fb;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $main-blue;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: $text-blue;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .category__back {
+    display: none;
+  }
+
+  .category__more {
+    width: calc(100% - 30px);
+    margin-left: 30px;
+  }
+
+  .category__sidebar {
+    display: block;
+    width: 370px;
+    min-width: 370px;
+  }
+
+  .category__list {
+    @include list-reset;
+    margin: 0;
+    border-right: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+  }
+
+  .category__inner {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .category__header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 74px;
+    padding: 0 26px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+  }
+
+  .category__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #515151;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d6d6d6;
+    transition: all 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 7px;
+      height: 100%;
+      background-color: $main-blue;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+
+    &--current {
+      background-color: #fafafa;
+      pointer-events: none;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      background-color: #fafafa;
+
+      &::before {
+        opacity: 0;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      height: 74px;
+      padding: 0 26px;
+    }
+  }
+}
