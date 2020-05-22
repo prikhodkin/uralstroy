@@ -1,0 +1,47 @@
+.back {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+
+  &:hover {
+    .back__text {
+      color: $text-blue;
+    }
+
+    .back__icon {
+      border-color: $text-blue;
+
+      svg {
+        fill: $text-blue;
+      }
+    }
+  }
+}
+
+.back__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  min-width: 41px;
+  height: 41px;
+  margin-right: 17px;
+  border: 1px solid #c7c7c7;
+  border-radius: 50%;
+  transition: all 0.3s;
+
+  svg {
+    width: 7px;
+    height: 11px;
+    transition: all 0.3s;
+    fill: $main-blue;
+  }
+}
+
+.back__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+  transition: all 0.3s;
+}
