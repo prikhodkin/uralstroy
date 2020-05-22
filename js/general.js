@@ -22,4 +22,23 @@ Array.prototype.forEach.call(inputs, function (input) {
     if (countFiles) label.querySelector('.input__text').innerText = 'Выбрано файлов: ' + countFiles;else label.querySelector('.input__text').innerText = labelVal;
   });
 });
+$(".product__slider").slick({
+  accessibility: false,
+  dots: false,
+  prevArrow: '.product__arrow--prev',
+  nextArrow: '.product__arrow--next'
+});
+$('.product__step--min').on('click', function (evt) {
+  evt.preventDefault();
+  var currentValue = $('.product__number').val();
+  $('.product__number').val(currentValue - 1);
+});
+$('.product__step--max').on('click', function (evt) {
+  evt.preventDefault();
+  var currentValue = Number($('.product__number').val());
+  $('.product__number').val(currentValue + 1);
+});
+$('.product__show').on('click', function () {
+  $('.product__info--hide').slideToggle();
+});
 //# sourceMappingURL=maps/general.js.map
