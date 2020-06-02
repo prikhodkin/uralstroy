@@ -63,4 +63,5 @@ $('.about__slider-length').html('0' + $(".about__slider").slick("getSlick").slid
 $(".about__slider").on("afterChange", function (event, slick, currentSlide, nextSlide) {
   $(".about__slider-current").html('0' + (currentSlide + 1));
 });
+$('#responsiveTabsDemo').responsiveTabs();
 //# sourceMappingURL=maps/general.js.map
