@@ -3,3 +3,4 @@
 //= "../blocks/input/input.js"
 //= "../blocks/product/product.js"
 //= "../blocks/about/about.js"
+//= "../blocks/reviews/reviews.js"

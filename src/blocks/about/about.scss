@@ -85,6 +85,13 @@
     }
   }
 
+  &--active {
+    &::before {
+      width: 11px;
+      margin-right: 10px;
+    }
+  }
+
   &:not(:last-child) {
     margin-bottom: 20px;
   }
