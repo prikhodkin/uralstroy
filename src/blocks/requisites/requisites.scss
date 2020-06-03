@@ -1,0 +1,174 @@
+.requisites {
+  font-family: $second-font;
+}
+
+.requisites__name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2c2c2c;
+}
+
+.requisites__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+
+  span {
+    font-size: 14px;
+    line-height: 20px;
+    color: #9b9b9b;
+  }
+
+  a {
+    color: $text-blue;
+    border-bottom: 1px solid $text-blue;
+  }
+}
+
+.about__content {
+  .requisites__name {
+    margin-bottom: 20px;
+  }
+
+  .requisites__text {
+    margin-bottom: 7px;
+  }
+}
+
+.requisites__row {
+  display: flex;
+  margin-bottom: 40px;
+
+  &--mobile {
+    flex-direction: column;
+
+    .requisites__col {
+      &:first-child {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.requisites__col {
+  &--first {
+    width: 176px;
+    min-width: 176px;
+  }
+}
+
+.requisites__wrapper {
+  .requisites__row {
+    margin-bottom: 0;
+  }
+
+  .requisites__col {
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.requisites__download {
+  display: inline-flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: $text-blue;
+  transition: all 0.3s;
+
+  span {
+    border-bottom: 1px solid $text-blue;
+  }
+
+  &:hover {
+    color: $main-blue;
+    border-color: $main-blue;
+
+    .requisites__icon {
+      fill: $main-blue;
+    }
+  }
+}
+
+.requisites__icon {
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin-right: 22px;
+  transition: all 0.3s;
+  fill: $main-blue;
+}
+
+@media (min-width: 768px) {
+  .requisites__row {
+    &--mobile {
+      flex-direction: row;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      margin-bottom: 0;
+
+      .requisites__col {
+        &:last-child {
+          width: 330px;
+          min-width: 330px;
+          margin-right: 55px;
+        }
+      }
+    }
+
+    .requisites__col {
+      &:first-child {
+        width: 330px;
+        min-width: 330px;
+        margin-right: 55px;
+      }
+    }
+  }
+
+  .requisites__wrapper {
+    .requisites__row {
+      justify-content: space-between;
+    }
+
+    .requisites__col {
+      &:first-child {
+        width: auto;
+        min-width: unset;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .requisites__download {
+    padding: 15px 55px 15px 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: unset;
+
+      span {
+        color: $text-blue;
+      }
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #353535;
+      border-bottom: none;
+    }
+  }
+}

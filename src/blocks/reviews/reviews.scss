@@ -91,9 +91,100 @@
   color: #a7a7a7;
 }
 
+.reviews__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $second-font;
+  color: #5e5e5e;
+  border: none;
+  border-bottom: 0.5px solid #b5b5b5;
+  appearance: none;
+
+  &:focus {
+    border-color: $main-blue;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5e5e5e;
+  }
+}
+
+.reviews__textarea {
+  width: 100%;
+  margin-bottom: 32px;
+  padding-bottom: 11px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $second-font;
+  color: #5e5e5e;
+  border: none;
+  border-bottom: 0.5px solid #b5b5b5;
+  appearance: none;
+
+  &:focus {
+    border-color: $main-blue;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5e5e5e;
+  }
+}
+
+.reviews__politic {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: $second-font;
+  color: #000000;
+
+  a {
+    color: $text-blue;
+  }
+}
+
+.reviews__submit {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 @media (min-width: 1200px) {
   .reviews__title {
     display: inline-block;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    .reviews__list {
+      margin-top: 60px;
+      padding-right: 10px;
+      border-right: 1px solid rgba(187, 187, 187, 0.4);
+    }
+
+    .reviews__item {
+      padding: 0;
+    }
+
+    .reviews__item-inner {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .reviews__form {
+    width: 235px;
+    margin-top: 100px;
+    margin-left: 50px;
   }
 
   .reviews {
