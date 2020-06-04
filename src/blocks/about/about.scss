@@ -272,12 +272,24 @@ p.about__slider-counter {
   }
 
   .about__sidebar {
+    position: relative;
     width: 305px;
     min-width: 305px;
     margin-right: 55px;
     padding-top: 42px;
     padding-right: 60px;
-    border-right: 1px solid #c4c4c4;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 1px;
+      height: 60%;
+      background-color: rgba(219, 219, 219, 0.6);
+    }
+    //border-right: 1px solid #c4c4c4;
   }
 
   .about__content {

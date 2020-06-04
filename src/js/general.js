@@ -4,3 +4,4 @@
 //= "../blocks/product/product.js"
 //= "../blocks/about/about.js"
 //= "../blocks/reviews/reviews.js"
+//= "../blocks/contacts/contacts.js"
