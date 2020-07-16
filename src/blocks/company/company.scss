@@ -1,0 +1,50 @@
+.company {
+  padding: 30px 15px;
+
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000000;
+  }
+}
+
+.company__button {
+  text-align: center;
+}
+
+.company__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 35px;
+}
+
+@media (min-width: 1200px) {
+  .company {
+    @include page-wrapper;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .company__inner {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+
+  .company__content {
+    width: 575px;
+    min-width: 575px;
+    margin-right: 25px;
+  }
+
+  .company__button {
+    max-width: 220px;
+    margin-top: 30px;
+  }
+}

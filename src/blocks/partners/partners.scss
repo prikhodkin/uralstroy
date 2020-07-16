@@ -1,0 +1,35 @@
+.partners {
+  padding: 40px 15px;
+}
+
+.partners__title {
+  margin-bottom: 20px;
+}
+
+.partners__list {
+  li {
+    img {
+      display: block;
+      margin: 0 auto;
+      filter: grayscale(100%);
+      transition: all 0.3s;
+
+      &:hover {
+        filter: unset;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .partners {
+    @include page-wrapper;
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  .partners__title {
+    margin-bottom: 45px;
+  }
+}

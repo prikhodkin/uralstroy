@@ -1,0 +1,265 @@
+.our {
+  padding: 30px 0 30px 15px;
+}
+
+.our__list {
+  @include list-reset;
+  display: flex;
+  max-width: 100%;
+  height: unset;
+  max-height: auto;
+  margin-top: 35px;
+  padding-right: 15px;
+  overflow-x: auto;
+}
+
+
+.our__item {
+  width: 300px;
+  min-width: 300px;
+  min-height: 240px;
+  margin-right: 15px;
+  padding: 16px 20px;
+  background-repeat: no-repeat;
+
+  a {
+    display: block;
+    height: 100%;
+  }
+
+  .our__icon {
+    display: none;
+  }
+
+  &:first-child {
+    background-color: #447dce;
+    background-image: url("../../img/cats__01.png");
+    background-position: left 23px bottom 50px;
+    background-size: 168px;
+  }
+
+  &:nth-child(2) {
+    background-color: #7aa1d7;
+    background-image: url("../../img/cats__02.png");
+    background-position: bottom right -130px;
+    background-size: 309px;
+  }
+
+  &:nth-child(3) {
+    background-color: #348dce;
+    background-image: url("../../img/cats__03.png");
+    background-position: bottom right;
+    background-size: 240px;
+  }
+
+  &:nth-child(4) {
+    background-color: #db415e;
+    background-image: url("../../img/cats__04.png");
+    background-position: bottom right;
+    background-size: 240px;
+  }
+
+  &:nth-child(5) {
+    background-color: #e1effe;
+    background-image: url("../../img/cats__05.png");
+    background-position: bottom right;
+    background-size: 240px;
+
+    .our__name {
+      color: #272727;
+    }
+  }
+
+  &:nth-child(6) {
+    display: none;
+    background-color: #f5f5f5;
+  }
+}
+
+.our__name {
+  max-width: 225px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.our__link {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.our__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  margin-right: 22px;
+  background-color: #db415e;
+  border-left: 50%;
+  border-radius: 50%;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+}
+
+.our__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.our__small {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  color: #919191;
+}
+
+.our__text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+  color: #0065bb;
+}
+
+
+@media (min-width: 1200px) {
+  .our {
+    @include page-wrapper;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .our__list {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 50px;
+    overflow: unset;
+  }
+
+  .our__item {
+    z-index: 5;
+    flex-grow: 0;
+    width: 250px;
+    min-width: unset;
+    height: 300px;
+    margin-right: 0;
+    transition: all 0.3s;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .our__icon {
+      display: flex;
+      width: 30px;
+      min-width: 30px;
+      height: 30px;
+      background-color: #ffffff;
+
+      svg {
+        width: 12px;
+        height: 10px;
+        fill: #0b0b0b;
+      }
+    }
+
+    &:nth-child(1) {
+      width: 405px;
+      height: 545px;
+      background-position: center;
+      background-size: 310px;
+
+      &:hover {
+        background-size: 290px;
+      }
+    }
+
+    &:nth-child(2) {
+      &:hover {
+        background-size: 290px;
+      }
+    }
+
+    &:nth-child(3) {
+      background-position: bottom right -60px;
+
+      &:hover {
+        background-size: 220px;
+      }
+    }
+
+    &:nth-child(4) {
+      background-position: bottom -30px right -110px;
+      background-size: 310px;
+
+      &:hover {
+        background-size: 290px;
+      }
+
+      .our__icon {
+        svg {
+          fill: #db415e;
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      width: 500px;
+      height: 245px;
+      margin-top: -245px;
+      margin-left: 405px;
+      background-position: bottom -50px right -50px;
+      background-size: 300px;
+
+      &:hover {
+        background-size: 280px;
+      }
+
+      .our__icon {
+        background-color: #425170;
+
+        svg {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      display: block;
+      height: 245px;
+      margin-top: -245px;
+
+      .our__icon {
+        background-color: #db415e;
+
+        svg {
+          fill: #ffffff;
+        }
+      }
+
+      .our__name {
+        color: #272727;
+      }
+    }
+  }
+
+  .our__link {
+    display: none;
+  }
+
+  .our__name {
+    max-width: unset;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

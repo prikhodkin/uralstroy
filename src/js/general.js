@@ -5,3 +5,6 @@
 //= "../blocks/about/about.js"
 //= "../blocks/reviews/reviews.js"
 //= "../blocks/contacts/contacts.js"
+//= "../blocks/partners/partners.js"
+//= "../blocks/our/our.js"
+//= "../blocks/modal/modal.js"

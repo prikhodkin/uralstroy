@@ -51,7 +51,9 @@ const requireDir = require("require-dir"),
         './node_modules/wow.js/dist/wow.js',
         './node_modules/slick-carousel/slick/slick.min.js',
         './node_modules/responsive-tabs/js/jquery.responsiveTabs.js',
-        './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'],
+        './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        './node_modules/jscrollpane/script/jquery.mousewheel.js',
+        './node_modules/jscrollpane/script/jquery.jscrollpane.js'],
       dest: "./dist/js/"
     },
     sprite: {

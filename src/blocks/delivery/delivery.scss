@@ -1,0 +1,31 @@
+.delivery {
+  padding: 70px 15px 40px 15px;
+}
+
+.delivery__img {
+  width: 100%;
+}
+
+.delivery__title {
+  margin-bottom: 17px;
+}
+
+.delivery__text {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: $second-font;
+}
+
+
+@media (min-width: 1200px) {
+  .delivery {
+    @include page-wrapper;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .delivery__text {
+    max-width: 435px;
+  }
+}
