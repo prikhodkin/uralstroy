@@ -83,6 +83,5 @@ gulp.task('dev',
 
 gulp.task('build',
   gulp.series('clean','sprite',
-    gulp.parallel('sass:min','html','scripts:min','scripts-lib:min','images:min','favicons','fonts', 'webp'),
-    gulp.series('hash')
+    gulp.parallel('sass:min','html','scripts:min','scripts-lib:min','images:min','favicons','fonts', 'webp')
   ));
